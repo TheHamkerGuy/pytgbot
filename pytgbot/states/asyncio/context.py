@@ -1,6 +1,6 @@
 from pytgbot.states import State, StatesGroup
 from pytgbot.types import CallbackQuery, Message
-from pytgbot.async_pytgbot import AsyncTeleBot
+from pytgbot.async_pytgbot import AsyncPytgbot
 from pytgbot.states import resolve_context
 
 from typing import Union
