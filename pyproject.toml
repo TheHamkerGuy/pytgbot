@@ -3,11 +3,11 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pyTelegramBotAPI"
-version = "4.26.0"
-description = "Python Telegram bot api."
-authors = [{name = "eternnoir", email = "eternnoir@gmail.com"}]
-license = {text = "GPL2"}
+name = "pytgbot"
+version = "0.0.1"
+description = "Telegram python bot api."
+authors = [{name = "TheHamkerGuy", email = "thehamkerguy@gmail.com"}]
+license = {text = "GPL3"}
 readme = "README.md"
 requires-python = ">=3.9"
 keywords = ["telegram", "bot", "api", "tools"]
@@ -20,15 +20,15 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Environment :: Console",
-    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)"
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
 ]
 dependencies = ["requests"]
 
 [project.urls]
-Homepage = "https://github.com/eternnoir/pyTelegramBotAPI"
-Documentation = "https://pytba.readthedocs.org"
-Repository = "https://github.com/eternnoir/pyTelegramBotAPI"
-Issues = "https://github.com/eternnoir/pyTelegramBotAPI/issues"
+Homepage = "https://github.com/TheHamkerGuy/pytgbot"
+Documentation = "https://pytgbot.readthedocs.org"
+Repository = "https://github.com/TheHamkerGuy/pytgbot"
+Issues = "https://github.com/TheHamkerGuy/pytgbot/issues"
 
 
 [project.optional-dependencies]
@@ -44,4 +44,4 @@ watchdog = ["watchdog"]
 
 
 [tool.hatch.build.targets.wheel]
-include = ["telebot/*"]
+include = ["pytgbot/*"]
