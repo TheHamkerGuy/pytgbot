@@ -23,7 +23,7 @@ import string
 
 import ssl
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 formatter = logging.Formatter(
     '%(asctime)s (%(filename)s:%(lineno)d %(threadName)s) %(levelname)s - %(name)s: "%(message)s"'
