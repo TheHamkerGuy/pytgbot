@@ -1,8 +1,8 @@
-from telebot.handler_backends import BaseMiddleware
-from telebot import TeleBot
-from telebot.states.sync.context import StateContext
-from telebot.util import update_types
-from telebot import types
+from pytgbot.handler_backends import BaseMiddleware
+from pytgbot import pytgbot
+from pytgbot.states.sync.context import StateContext
+from pytgbot.util import update_types
+from pytgbot import types
 
 
 class StateMiddleware(BaseMiddleware):
