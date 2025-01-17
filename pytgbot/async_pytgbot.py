@@ -71,16 +71,16 @@ class AsyncPytgbot:
     Usage:
 
     .. code-block:: python3
-        :caption: Using asynchronous implementation of TeleBot.
+        :caption: Using asynchronous implementation of pytgbot.
 
-        from telebot.async_telebot import AsyncTeleBot
-        bot = AsyncTeleBot('token') # get token from @BotFather
+        from telebot.async_pytgbot import AsyncPytgbot
+        bot = AsyncPytgbot('token') # get token from @BotFather
         # now you can register other handlers/update listeners, 
         # and use bot methods.
         # Remember to use async/await keywords when necessary.
 
     See more examples in examples/ directory:
-    https://github.com/eternnoir/pyTelegramBotAPI/tree/master/examples
+    https://github.com/TheHamkerGuy/pytgbot/tree/master/examples
 
     .. note::
 
