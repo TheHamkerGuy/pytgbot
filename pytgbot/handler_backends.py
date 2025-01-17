@@ -2,7 +2,7 @@ import os
 import pickle
 import threading
 
-from telebot import apihelper
+from pytgbot import apihelper
 try:
     from redis import Redis
     redis_installed = True
@@ -10,7 +10,7 @@ except:
     redis_installed = False
 
 # backward compatibility
-from telebot.states import State, StatesGroup
+from pytgbot.states import State, StatesGroup
 
 class HandlerBackend(object):
     """
