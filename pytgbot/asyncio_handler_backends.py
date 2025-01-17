@@ -1,7 +1,7 @@
 """
 File with all middleware classes, states.
 """
-from telebot.states import State, StatesGroup
+from pytgbot.states import State, StatesGroup
 
 
 class BaseMiddleware:
