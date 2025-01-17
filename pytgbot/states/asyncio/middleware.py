@@ -1,5 +1,5 @@
 from pytgbot.asyncio_handler_backends import BaseMiddleware
-from pytgbot.async_telebot import AsyncPytgbot
+from pytgbot.async_pytgbot import AsyncPytgbot
 from pytgbot.states.sync.context import StateContext
 from pytgbot.util import update_types
 from pytgbot import types
