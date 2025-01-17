@@ -1,4 +1,4 @@
-from telebot.storage.base_storage import StateStorageBase, StateDataContext
+from pytgbot.storage.base_storage import StateStorageBase, StateDataContext
 from typing import Optional, Union
 
 
