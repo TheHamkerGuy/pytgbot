@@ -11,8 +11,8 @@ from urllib.parse import parse_qsl
 import queue as Queue
 import logging
 
-from telebot import types
-from telebot.service_utils import is_pil_image, is_dict, is_string, is_bytes, chunks, generate_random_token, pil_image_to_file
+from pytgbot import types
+from pytgbot.service_utils import is_pil_image, is_dict, is_string, is_bytes, chunks, generate_random_token, pil_image_to_file
 
 try:
     import ujson as json
@@ -21,7 +21,7 @@ except ImportError:
 
 MAX_MESSAGE_LENGTH = 4096
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 thread_local = threading.local()
 
