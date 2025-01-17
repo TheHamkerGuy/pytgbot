@@ -22,7 +22,7 @@ import pytgbot
 from pytgbot import types
 from pytgbot import util
 
-logger = telebot.logger
+logger = pytgbot.logger
 
 proxy = None
 session = None
