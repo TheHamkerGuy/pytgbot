@@ -15,14 +15,14 @@ try:
 except ImportError:
     import json
 
-from telebot import service_utils
-from telebot.formatting import apply_html_entities
+from pytgbot import service_utils
+from pytgbot.formatting import apply_html_entities
 
 
 DISABLE_KEYLEN_ERROR = False
 DEPRECATION_STACK_SHOW_DEPTH = 0
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 
 def log_deprecation_warning(warning_message, logging_level=logging.WARNING):
