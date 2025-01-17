@@ -1,7 +1,7 @@
-from telebot.states import State, StatesGroup
-from telebot.types import CallbackQuery, Message
-from telebot import TeleBot, types
-from telebot.states import resolve_context
+from pytgbot.states import State, StatesGroup
+from pytgbot.types import CallbackQuery, Message
+from pytgbot import pytgbot, types
+from pytgbot.states import resolve_context
 
 from typing import Union
 
