@@ -2,7 +2,7 @@ import asyncio # for future uses
 import ssl
 import aiohttp
 import certifi
-from telebot import types
+from pytgbot import types
 
 try:
     import ujson as json
@@ -16,7 +16,7 @@ from datetime import datetime
 from telebot import util
 import logging
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 proxy = None
 session = None
