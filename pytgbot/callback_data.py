@@ -3,7 +3,7 @@ Callback data factory's file.
 """
 
 """
-Copyright (c) 2017-2018 Alex Root Junior
+Copyright (c) 2025-2026 The Hamker Guy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this
 software and associated documentation files (the "Software"), to deal in the Software
@@ -45,8 +45,8 @@ class CallbackDataFilter:
         """
         Checks if query.data appropriates to specified config
 
-        :param query: telebot.types.CallbackQuery
-        :type query: telebot.types.CallbackQuery
+        :param query: pytgbot.types.CallbackQuery
+        :type query: pytgbot.types.CallbackQuery
 
         :return: True if query.data appropriates to specified config
         :rtype: bool
