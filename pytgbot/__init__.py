@@ -10,12 +10,12 @@ import traceback
 from typing import Any, Callable, List, Optional, Union, Dict
 
 # these imports are used to avoid circular import error
-import telebot.util
-import telebot.types
-import telebot.formatting
+import pytgbot.util
+import pytgbot.types
+import pytgbot.formatting
 
 # storage
-from telebot.storage import StatePickleStorage, StateMemoryStorage, StateStorageBase
+from pytgbot.storage import StatePickleStorage, StateMemoryStorage, StateStorageBase
 
 # random module to generate random string
 import random
@@ -37,12 +37,12 @@ logger.addHandler(console_output_handler)
 
 logger.setLevel(logging.ERROR)
 
-from telebot import apihelper, util, types
-from telebot.handler_backends import (
+from pytgbot import apihelper, util, types
+from pytgbot.handler_backends import (
     HandlerBackend, MemoryHandlerBackend, FileHandlerBackend, BaseMiddleware,
     CancelUpdate, SkipHandler, State, ContinueHandling
 )
-from telebot.custom_filters import SimpleCustomFilter, AdvancedCustomFilter
+from pytgbot.custom_filters import SimpleCustomFilter, AdvancedCustomFilter
 
 
 REPLY_MARKUP_TYPES = Union[
@@ -52,7 +52,7 @@ REPLY_MARKUP_TYPES = Union[
 
 
 """
-Module : telebot
+Module : pytgbot
 """
 
 
@@ -80,7 +80,7 @@ class ExceptionHandler:
         return False
 
 
-class TeleBot:
+class pytgbot:
     """
     This is the main synchronous class for Bot.
 
@@ -97,7 +97,7 @@ class TeleBot:
         # and use bot methods.
 
     See more examples in examples/ directory:
-    https://github.com/eternnoir/pyTelegramBotAPI/tree/master/examples
+    https://github.com/TheHamkerGuy/pytgbot/tree/master/examples
 
     .. note::
 
