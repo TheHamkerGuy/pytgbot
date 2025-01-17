@@ -1,9 +1,9 @@
 from abc import ABC
 from typing import Optional, Union
-from telebot.asyncio_handler_backends import State
+from pytgbot.asyncio_handler_backends import State
 
-from telebot import types
-from telebot.states import resolve_context
+from pytgbot import types
+from pytgbot.states import resolve_context
 
 
 class SimpleCustomFilter(ABC):
