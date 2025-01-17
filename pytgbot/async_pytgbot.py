@@ -8,21 +8,21 @@ from typing import Any, Awaitable, Callable, List, Optional, Union, Dict
 import sys
 
 # this imports are used to avoid circular import error
-import telebot.util
-import telebot.types
+import pytgbot.util
+import pytgbot.types
 
 
 # storages
-from telebot.asyncio_storage import StateMemoryStorage, StatePickleStorage, StateStorageBase
-from telebot.asyncio_handler_backends import BaseMiddleware, CancelUpdate, SkipHandler, State, ContinueHandling
+from pytgbot.asyncio_storage import StateMemoryStorage, StatePickleStorage, StateStorageBase
+from pytgbot.asyncio_handler_backends import BaseMiddleware, CancelUpdate, SkipHandler, State, ContinueHandling
 
 from inspect import signature, iscoroutinefunction
 
-from telebot import util, types, asyncio_helper
+from pytgbot import util, types, asyncio_helper
 import asyncio
-from telebot import asyncio_filters
+from pytgbot import asyncio_filters
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 REPLY_MARKUP_TYPES = Union[
     types.InlineKeyboardMarkup, types.ReplyKeyboardMarkup, 
@@ -35,7 +35,7 @@ import ssl
 
 
 """
-Module : telebot
+Module : pytgbot
 """
 
 
@@ -62,7 +62,7 @@ class ExceptionHandler:
         return False
 
 
-class AsyncTeleBot:
+class AsyncPytgbot:
     """
     This is the main asynchronous class for Bot.
 
