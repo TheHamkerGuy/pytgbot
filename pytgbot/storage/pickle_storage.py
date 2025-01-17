@@ -2,7 +2,7 @@ import os
 import pickle
 import threading
 from typing import Optional, Union, Callable
-from telebot.storage.base_storage import StateStorageBase, StateDataContext
+from pytgbot.storage.base_storage import StateStorageBase, StateDataContext
 
 
 def with_lock(func: Callable) -> Callable:
