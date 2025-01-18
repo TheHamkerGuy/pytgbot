@@ -9,7 +9,7 @@ import json
 from typing import Optional, Union, Callable, Coroutine
 import asyncio
 
-from telebot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
+from pytgbot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
 
 
 def async_with_lock(func: Callable[..., Coroutine]) -> Callable[..., Coroutine]:
@@ -38,7 +38,7 @@ class StateRedisStorage(StateStorageBase):
     .. code-block:: python3
 
         storage = StateRedisStorage(...)
-        bot = AsyncTeleBot(token, storage=storage)
+        bot = AsyncPytgbot(token, storage=storage)
 
     :param host: Redis host, default is "localhost".
     :type host: str
