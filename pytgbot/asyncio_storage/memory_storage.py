@@ -1,4 +1,4 @@
-from telebot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
+from pytgbot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
 from typing import Optional, Union
 
 
@@ -11,12 +11,12 @@ class StateMemoryStorage(StateStorageBase):
     .. code-block:: python3
 
         storage = StateMemoryStorage()
-        bot = AsyncTeleBot(token, storage=storage)
+        bot = AsyncPytgbot(token, storage=storage)
 
     :param separator: Separator for keys, default is ":".
     :type separator: Optional[str]
 
-    :param prefix: Prefix for keys, default is "telebot".
+    :param prefix: Prefix for keys, default is "pytgbot".
     :type prefix: Optional[str]
     """
 
