@@ -9,17 +9,17 @@ import time
 
 import pytest
 
-import telebot
-from telebot import types
-from telebot.handler_backends import MemoryHandlerBackend, FileHandlerBackend
+import pytgbot
+from pytgbot import types
+from pytgbot.handler_backends import MemoryHandlerBackend, FileHandlerBackend
 
 if REDIS_TESTS:
-    from telebot.handler_backends import RedisHandlerBackend
+    from pytgbot.handler_backends import RedisHandlerBackend
 
 
 @pytest.fixture()
 def telegram_bot():
-    return telebot.TeleBot('1234:test', threaded=False)
+    return pytgbot.pytgbot('1234:test', threaded=False)
 
 
 @pytest.fixture
