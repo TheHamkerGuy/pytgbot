@@ -6,7 +6,7 @@ import os
 import sys
 import logging
 
-logger = logging.getLogger('TeleBot')
+logger = logging.getLogger('pytgbot')
 
 class EventHandler(FileSystemEventHandler):
     def on_any_event(self, event: FileSystemEvent):
