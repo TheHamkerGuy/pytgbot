@@ -38,7 +38,7 @@ class AsyncWebhookListener:
         Use AsyncTeleBot.run_webhooks() instead.
 
         :param bot: AsyncPytgbot instance.
-        :type bot: telebot.async_pytgbot.AsyncPytgbot
+        :type bot: pytgbot.async_pytgbot.AsyncPytgbot
 
         :param secret_token: Telegram secret token
         :type secret_token: str
