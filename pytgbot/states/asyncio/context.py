@@ -23,7 +23,7 @@ class StateContext:
 
     def __init__(self, message: Union[Message, CallbackQuery], bot: str) -> None:
         self.message: Union[Message, CallbackQuery] = message
-        self.bot: AsyncTeleBot = bot
+        self.bot: AsyncPytgbot = bot
         self.bot_id = self.bot.bot_id
 
     async def set(self, state: Union[State, str]) -> bool:
