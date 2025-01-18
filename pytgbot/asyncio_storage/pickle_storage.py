@@ -9,7 +9,7 @@ import pickle
 import asyncio
 from typing import Optional, Union, Callable, Any
 
-from telebot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
+from pytgbot.asyncio_storage.base_storage import StateStorageBase, StateDataContext
 
 
 def with_lock(func: Callable) -> Callable:
@@ -33,7 +33,7 @@ class StatePickleStorage(StateStorageBase):
     .. code-block:: python3
 
         storage = StatePickleStorage()
-        bot = AsyncTeleBot(token, storage=storage)
+        bot = AsyncPytgbot(token, storage=storage)
 
     :param file_path: Path to file where states will be stored.
     :type file_path: str
@@ -48,7 +48,7 @@ class StatePickleStorage(StateStorageBase):
     def __init__(
         self,
         file_path: str = "./.state-save/states.pkl",
-        prefix="telebot",
+        prefix="pytgbot",
         separator: Optional[str] = ":",
     ) -> None:
 
