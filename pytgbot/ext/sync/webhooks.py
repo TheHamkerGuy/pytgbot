@@ -1,5 +1,5 @@
 """
-This file is used by TeleBot.run_webhooks() function.
+This file is used by pytgbot.run_webhooks() function.
 Fastapi is required to run this script.
 """
 
@@ -14,7 +14,7 @@ try:
 except ImportError:
     fastapi_installed = False
 
-from telebot.types import Update
+from pytgbot.types import Update
 
 from typing import Optional
 
@@ -29,12 +29,12 @@ class SyncWebhookListener:
                 ) -> None:
         """
         Synchronous implementation of webhook listener
-        for synchronous version of telebot.
+        for synchronous version of pytgbot.
         Not supposed to be used manually by user.
         Use TeleBot.run_webhooks() instead.
 
-        :param bot: TeleBot instance.
-        :type bot: telebot.TeleBot
+        :param bot: pytgbot instance.
+        :type bot: pytgbot.pytgbot
 
         :param secret_token: Telegram secret token
         :type secret_token: str
