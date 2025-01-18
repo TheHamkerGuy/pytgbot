@@ -1,5 +1,5 @@
 """
-This file is used by AsyncTeleBot.run_webhooks() function.
+This file is used by AsyncPytgbot.run_webhooks() function.
 
 Fastapi and starlette(0.20.2+) libraries are required to run this script.
 """
@@ -17,7 +17,7 @@ except ImportError:
 import asyncio
 
 
-from telebot.types import Update
+from pytgbot.types import Update
 
 
 from typing import Optional
@@ -33,12 +33,12 @@ class AsyncWebhookListener:
                 ) -> None:
         """
         Aynchronous implementation of webhook listener
-        for asynchronous version of telebot.
+        for asynchronous version of pytgbot.
         Not supposed to be used manually by user.
         Use AsyncTeleBot.run_webhooks() instead.
 
-        :param bot: AsyncTeleBot instance.
-        :type bot: telebot.async_telebot.AsyncTeleBot
+        :param bot: AsyncPytgbot instance.
+        :type bot: telebot.async_pytgbot.AsyncPytgbot
 
         :param secret_token: Telegram secret token
         :type secret_token: str
